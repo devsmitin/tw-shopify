@@ -15,6 +15,6 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 
-
-*/assets/bundle.*
-/*config.yml
+# Shopify config file and build outputs
+shopify/assets/bundle.*
+shopify/config.yml

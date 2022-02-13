@@ -11,8 +11,8 @@
     "build": "webpack --mode production",
     "download": "cd shopify && theme download --env=production",
     "download:dev": "cd shopify && theme download",
-    "start": "webpack --mode development && cd shopify && theme deploay && theme open && theme watch",
-    "start:prod": "webpack --mode development && cd shopify && theme deploay --env=production && theme open --env=production && theme watch --env=production",
+    "start": "webpack --mode development & cd shopify && theme deploay && theme open && theme watch",
+    "start:prod": "webpack --mode development & cd shopify && theme deploay --env=production && theme open --env=production && theme watch --env=production",
     "publish": "webpack --mode production && cd shopify && theme deploy --env=production",
     "publish:dev": "webpack --mode production && cd shopify && theme deploy"
   },
