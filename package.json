@@ -1,0 +1,36 @@
+{
+  "name": "tw-project",
+  "version": "1.0.0",
+  "description": "Starter for Tailwind CSS using webpack and postcss",
+  "main": "index.js",
+  "keywords": [],
+  "author": "@devsmitin",
+  "license": "ISC",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "download": "cd shopify && theme download --env=production",
+    "download:dev": "cd shopify && theme download",
+    "start": "webpack --mode development && cd shopify && theme deploay && theme open && theme watch",
+    "start:prod": "webpack --mode development && cd shopify && theme deploay --env=production && theme open --env=production && theme watch --env=production",
+    "publish": "webpack --mode production && cd shopify && theme deploy --env=production",
+    "publish:dev": "webpack --mode production && cd shopify && theme deploy"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.22"
+  },
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "babel-loader": "^8.2.3",
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "css-loader": "^6.6.0",
+    "style-loader": "^3.3.1",
+    "postcss-loader": "^6.2.1",
+    "autoprefixer": "^10.4.2",
+    "sass-loader": "^12.4.0",
+    "node-sass": "^7.0.1",
+    "mini-css-extract-plugin": "^2.5.3"
+  }
+}
