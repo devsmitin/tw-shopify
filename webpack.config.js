@@ -36,7 +36,7 @@ const config = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "bundle.css.liquid",
+      filename: "bundle.css",
     }),
   ],
 };
