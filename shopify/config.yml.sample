@@ -40,3 +40,24 @@ development:
     # - config/settings_data.json
     # - assets/bundle.js.map
     # - locales/
+
+
+production:
+  password: shap_xxxxxxxxxxxxxxxxxxxxxxx  #example, password format can be different
+  theme_id: "12345678901" #Quotes needed here only
+  store: example.myshopify.com
+  ignore_files:
+    - README.md
+    - .gitignore
+    - "*.png"
+    - "*.jpg"
+    - "*.jpeg"
+    - "*.gif"
+    - "*.mp4"
+    - "*.woff"
+    - "*.js.map"
+    - "*.ttf"
+    - "*.eot"
+    # - config/settings_data.json
+    # - assets/bundle.js.map
+    # - locales/
