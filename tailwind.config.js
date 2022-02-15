@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./dist/**/*.{html,js}"],
+  content: ["./shopify/**/*.{liquid,html,js}"],
   theme: {
     extend: {},
   },

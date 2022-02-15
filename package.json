@@ -1,20 +1,23 @@
 {
   "name": "tw-project",
   "version": "1.0.0",
-  "description": "Starter for Tailwind CSS using webpack and postcss",
+  "description": "A starting point for an Online Store 2.0 theme using Tailwind CSS",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "Shopify Theme",
+    "Online Store 2.0",
+    "shopify-cli",
+    "Tailwind CSS",
+    "Webpack"
+  ],
   "author": "@devsmitin",
   "license": "ISC",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "download": "cd shopify && theme download --env=production",
-    "download:dev": "cd shopify && theme download",
-    "start": "webpack --mode development & cd shopify && theme deploay && theme open && theme watch",
-    "start:prod": "webpack --mode development & cd shopify && theme deploay --env=production && theme open --env=production && theme watch --env=production",
-    "publish": "webpack --mode production && cd shopify && theme deploy --env=production",
-    "publish:dev": "webpack --mode production && cd shopify && theme deploy"
+    "download": "cd shopify && shopify theme pull",
+    "start": "webpack --mode development & cd shopify && shopify theme serve",
+    "publish": "webpack --mode production && cd shopify && shopify theme push"
   },
   "dependencies": {
     "tailwindcss": "^3.0.22"
