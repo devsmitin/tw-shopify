@@ -2,7 +2,7 @@
 
 
 <!-- Header Section -->
-<nav class="relative bg-white border-gray-200 border-b z-40">
+<nav class="relative bg-white border-b-2 border-black z-40">
   <div class="container mx-auto px-4 md:px-6 flex flex-wrap items-center justify-between md:justify-start">
     <a href="{{ routes.root_url }}" class="flex p-2 mx-2 h-20 order-1 md:order-none">
       <span class="self-center text-lg font-semibold whitespace-nowrap">
@@ -13,13 +13,10 @@
       {% endif %}
       </span>
     </a>
-    <button
-      data-toggle="class:hidden"
-      data-target="#mobile-menu"
-      type="button"
+    <button type="button"
+      data-toggle data-target="#mobile-menu"
       class="inline-flex items-center mx-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-      aria-controls="mobile-menu"
-      aria-expanded="false"
+      aria-controls="mobile-menu" aria-expanded="false"
     >
       <span class="sr-only">Open main menu</span>
       {% render 'icons', icon: "menu" %}
@@ -33,16 +30,13 @@
         </a>
       </li>
     </ul>
-    <div class="hidden md:block fixed md:static inset-0 md:w-auto md:h-auto border-b md:border-0 md:ml-8" id="mobile-menu">
+    <div id="mobile-menu" class="hidden md:block fixed md:static inset-0 md:w-auto md:h-auto border-b md:border-0 md:ml-8">
       <div class="fixed md:hidden inset-0 bg-black bg-opacity-25"></div>
-      <div class="flex flex-col bg-white relative w-80 h-full">
-        <button
-          data-toggle="class:hidden"
-          data-target="#mobile-menu"
-          type="button"
+      <div class="flex flex-col bg-white relative w-80 h-full border-r-2 md:border-0 border-black">
+        <button type="button"
+          data-toggle data-target="#mobile-menu"
           class="inline-flex items-center p-3 m-3 ml-auto text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
+          aria-controls="mobile-menu" aria-expanded="false"
         >
           <span class="sr-only">Close main menu</span>
           {% render 'icons', icon: "close" %}

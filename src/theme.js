@@ -10,23 +10,24 @@ class TWTheme {
 
   clickHandler = () => {
     let that = this;
-    let clickTargets = document.querySelectorAll("[data-toggle]");
-    clickTargets.forEach((toggle) => {
+    let togglers = document.querySelectorAll("[data-toggle]");
+    togglers.forEach((toggle) => {
       toggle.addEventListener("click", function () {
-        if (toggle.dataset.toggle.includes("class:")) {
-          let className = this.dataset.toggle.replace("class:", "");
-          let target = this.dataset.target;
-          document.querySelector(target).classList.toggle(className);
-        }
-        if (toggle.dataset.toggle.includes("quantity:")) {
-          let action = this.dataset.toggle.replace("quantity:", "");
-          let input = this.parentElement.querySelector("input");
-          if (action === "plus") {
-            input.value =
-              parseInt(input.value) + 1 > 0 ? parseInt(input.value) + 1 : 1;
-          } else if (parseInt(input.value) > 1) {
-            input.value = parseInt(input.value) - 1;
-          }
+        let target = this.dataset.target;
+        document.querySelector(target).classList.toggle("hidden");
+      });
+    });
+
+    let counters = document.querySelectorAll("[data-counter]");
+    counters.forEach((counter) => {
+      let input = counter.parentElement.querySelector("input");
+      let action = counter.dataset.action;
+      counter.addEventListener("click", function () {
+        if (action === "plus") {
+          input.value =
+            parseInt(input.value) + 1 > 0 ? parseInt(input.value) + 1 : 1;
+        } else if (parseInt(input.value) > 1) {
+          input.value = parseInt(input.value) - 1;
         }
       });
     });
