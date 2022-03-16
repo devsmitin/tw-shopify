@@ -33,26 +33,26 @@ This template acts as a wrapper for Shopify theme. The `shopify` directory holds
     rm -rf .git
     ```
 
-2. Make sure the output file (`shopify/assets/bundle.css`) is included in the `head` of your `shopify/layout/theme.liquid` file.
+2. Clone your shopify theme in `root` directory and rename it to `shopify`, which will merge it with the `shopify` directory of template.
+
+3. Make sure the output file (`shopify/assets/bundle.css`) is included in the `head` of your `shopify/layout/theme.liquid` file.
 
     ```liquid
     {{ 'bundle.css' | asset_url | stylesheet_tag }}
     ```
     
-    The same holds for all `bundle.js` file created by Webpack. Ideally, it is best practice to include this file just before the end of `body` tag in your `shopify/layout/theme.liquid` file, but you may put this anywhere as per requirement. You can do this with the following line of code:
+    The same holds for `bundle.js` file created by Webpack. Ideally, it is best practice to include this file just before the end of `body` tag in the same file, but you can put this anywhere as per requirement. You can do this with the following line of code:
 
     ```liquid
     <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
     ```
 
-3. In our first step, we have removed git from this template using last command. There is no need to make any changes to this perticular template. See the usage below.
+4. In the first step, we removed git from this template using last command as there is no need to make any changes to this perticular template. You are required to commit changes within the `shopify` directory only.
 
-
-## Usage
 
 ### Development
 
-You will need single terminal window:
+You will need a terminal window. Here it is assumed that you are using bash or similar command language. To use this with Windows, you will need to change few commands in `package.json` file.
 
 1. Build your code and serve your Shopify theme
     
