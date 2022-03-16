@@ -35,14 +35,15 @@ This template acts as a wrapper for Shopify theme. The `shopify` directory holds
 
 2. Make sure the output file (`shopify/assets/bundle.css`) is included in the `head` of your `shopify/layout/theme.liquid` file.
 
-  ```liquid
-  {{ 'bundle.css' | asset_url | stylesheet_tag }}
-  ```
-  The same holds for all `bundle.js` file created by Webpack. Ideally, it is best practice to include this file just before the end of `body` tag in your `shopify/layout/theme.liquid` file, but you may put this anywhere as per requirement. You can do this with the following line of code:
+    ```liquid
+    {{ 'bundle.css' | asset_url | stylesheet_tag }}
+    ```
+    
+    The same holds for all `bundle.js` file created by Webpack. Ideally, it is best practice to include this file just before the end of `body` tag in your `shopify/layout/theme.liquid` file, but you may put this anywhere as per requirement. You can do this with the following line of code:
 
-  ```liquid
-  <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
-  ```
+    ```liquid
+    <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
+    ```
 
 3. In our first step, we have removed git from this template using last command. There is no need to make any changes to this perticular template. See the usage below.
 
