@@ -54,15 +54,14 @@ This template acts as a wrapper for Shopify theme. The `shopify` directory holds
 You will need single terminal window:
 
 1. Build your code and serve your Shopify theme
-
-  - First, log in to your store if you was not logged in already.
-    ```bash
-    shopify login --store your-store-name.myshopify.com
-    ```
-  - Build your code in development mode and serve your theme to your development store
-    ```bash
-    npm run start
-    ```
+    - First, log in to your store if you was not logged in already.
+      ```bash
+      shopify login --store your-store-name.myshopify.com
+      ```
+    - Build your code in development mode and serve your theme to your development store
+      ```bash
+      npm run start
+      ```
 
 2. Once done with development, push your code with production build to your desired theme
     ```bash
