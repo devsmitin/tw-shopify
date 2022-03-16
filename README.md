@@ -28,7 +28,8 @@ This template acts as a wrapper for Shopify theme. The `shopify` directory holds
 
     ```bash
     git clone https://github.com/devsmitin/tw-shopify.git
-    cd tw-shopify
+    mv tw-shopify your-awesome-project
+    cd your-awesome-project
     npm install
     rm -rf .git
     ```
