@@ -2,5 +2,5 @@
 import "./styles.css";
 import "./styles.scss";
 
-// JavaScript import
-console.log("hello world!");
+// JavaScript modules import
+require("./theme");
