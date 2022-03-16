@@ -16,8 +16,5 @@ ehthumbs.db
 Thumbs.db
 
 # Shopify config file and build outputs
-shopify/assets/bundle.*
-shopify/config.yml
-
-# Remove below in actual development
-shopify
+shopify/*
+!shopify/src

@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const config = {
-  entry: "./src/index.js",
+  entry: "./shopify/src/index.js",
   output: {
     path: path.resolve(__dirname, "shopify/assets"),
     filename: "bundle.js",
