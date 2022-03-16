@@ -26,12 +26,12 @@ This template acts as a wrapper for Shopify theme. The `shopify` directory holds
 
 1. Run the following commands:
 
-  ```bash
-  git clone https://github.com/devsmitin/tw-shopify.git
-  cd tw-shopify
-  npm install
-  rm -rf .git
-  ```
+    ```bash
+    git clone https://github.com/devsmitin/tw-shopify.git
+    cd tw-shopify
+    npm install
+    rm -rf .git
+    ```
 
 2. Make sure the output file (`shopify/assets/bundle.css`) is included in the `head` of your `shopify/layout/theme.liquid` file.
 
@@ -55,6 +55,7 @@ This template acts as a wrapper for Shopify theme. The `shopify` directory holds
 You will need single terminal window:
 
 1. Build your code and serve your Shopify theme
+    
     - First, log in to your store if you was not logged in already.
       ```bash
       shopify login --store your-store-name.myshopify.com
