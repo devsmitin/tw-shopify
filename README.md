@@ -13,7 +13,7 @@ A short description of this workflow:
 - Commit changes to the feature branch
 - Merge feature branch with main branch once development is done
 
-This template acts as a wrapper for Shopify theme. The `shopify` directory holds the Shopify theme files along with your source files, which makes it compatible with Shopify / GitHub integrtion. Source files are located within `shopify\src` directory and it is ignored by Shopify when pushing to the store.
+This template acts as a wrapper for Shopify theme. The `shopify` directory holds the Shopify theme files along with your source files, which makes it compatible with Shopify / GitHub integrtion. Source files are located within `shopify/src` directory and it is ignored by Shopify when pushing to the store.
 
 ## Getting started
 
