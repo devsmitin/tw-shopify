@@ -17,7 +17,6 @@
     "build": "webpack --mode=production",
     "download": "cd shopify && shopify theme pull",
     "start": "webpack --mode=development & cd shopify && shopify theme serve",
-    "start:prod": "webpack --mode=production & cd shopify && shopify theme serve",
     "publish": "webpack --mode=production && cd shopify && shopify theme push"
   },
   "dependencies": {
@@ -37,6 +36,7 @@
     "postcss-loader": "^6.2.1",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2"
   }
