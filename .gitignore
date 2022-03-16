@@ -20,4 +20,4 @@ shopify/assets/bundle.*
 shopify/config.yml
 
 # Remove below in actual development
-# shopify 
+shopify
