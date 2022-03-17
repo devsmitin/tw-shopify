@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const config = {
   entry: "./shopify/src/index.js",
@@ -36,7 +37,8 @@ const config = {
     ],
   },
   optimization: {
-    minimizer: [new CssMinimizerPlugin()],
+    minimize: true,
+    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -48,6 +50,7 @@ const config = {
 module.exports = (env, argv) => {
   if (argv.mode === "development") {
     config.watch = true;
+    config.optimization.minimize = false;
   }
   return config;
 };
