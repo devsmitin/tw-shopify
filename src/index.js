@@ -1,5 +1,5 @@
 // Style import
-import "./styles.css";
+import "./tailwind.css";
 import "./styles.scss";
 
 // JavaScript modules import

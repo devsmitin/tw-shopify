@@ -5,9 +5,9 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
 const config = {
-  entry: "./shopify/src/index.js",
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "shopify/assets"),
+    path: path.resolve(__dirname, "assets"),
     filename: "bundle.js",
   },
   module: {

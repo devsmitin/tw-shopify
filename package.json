@@ -1,6 +1,6 @@
 {
   "name": "tw-project",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A starting point for an Online Store 2.0 theme using Tailwind CSS",
   "main": "index.js",
   "keywords": [
@@ -15,9 +15,9 @@
   "scripts": {
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "download": "cd shopify && shopify theme pull",
-    "start": "webpack --mode=development & cd shopify && shopify theme serve",
-    "publish": "webpack --mode=production && cd shopify && shopify theme push"
+    "download": "shopify theme pull",
+    "start": "webpack --mode=development & shopify theme serve",
+    "publish": "webpack --mode=production && shopify theme push"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
